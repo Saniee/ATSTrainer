@@ -40,6 +40,8 @@ namespace ATSTrainer
             this.GameFound = new System.Windows.Forms.Label();
             this.ProcOpenLabel = new System.Windows.Forms.Label();
             this.Instructions = new System.Windows.Forms.Label();
+            this.rgch = new System.Windows.Forms.CheckBox();
+            this.rmd = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.MyPFP)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,8 +90,8 @@ namespace ATSTrainer
             // 
             // MyPFP
             // 
-            this.MyPFP.Image = global::ATSTrainer.Properties.Resources.mypfp;
-            this.MyPFP.Location = new System.Drawing.Point(12, 127);
+            this.MyPFP.Image = ((System.Drawing.Image)(resources.GetObject("MyPFP.Image")));
+            this.MyPFP.Location = new System.Drawing.Point(12, 150);
             this.MyPFP.Name = "MyPFP";
             this.MyPFP.Size = new System.Drawing.Size(80, 80);
             this.MyPFP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -100,7 +102,7 @@ namespace ATSTrainer
             // 
             this.MadeBy.AutoSize = true;
             this.MadeBy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MadeBy.Location = new System.Drawing.Point(98, 186);
+            this.MadeBy.Location = new System.Drawing.Point(98, 209);
             this.MadeBy.Name = "MadeBy";
             this.MadeBy.Size = new System.Drawing.Size(165, 21);
             this.MadeBy.TabIndex = 5;
@@ -110,7 +112,7 @@ namespace ATSTrainer
             // 
             this.GameFound.AutoSize = true;
             this.GameFound.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GameFound.Location = new System.Drawing.Point(98, 153);
+            this.GameFound.Location = new System.Drawing.Point(98, 176);
             this.GameFound.Name = "GameFound";
             this.GameFound.Size = new System.Drawing.Size(113, 21);
             this.GameFound.TabIndex = 6;
@@ -121,7 +123,7 @@ namespace ATSTrainer
             this.ProcOpenLabel.AutoSize = true;
             this.ProcOpenLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ProcOpenLabel.ForeColor = System.Drawing.Color.Red;
-            this.ProcOpenLabel.Location = new System.Drawing.Point(217, 153);
+            this.ProcOpenLabel.Location = new System.Drawing.Point(217, 176);
             this.ProcOpenLabel.Name = "ProcOpenLabel";
             this.ProcOpenLabel.Size = new System.Drawing.Size(38, 21);
             this.ProcOpenLabel.TabIndex = 7;
@@ -132,17 +134,43 @@ namespace ATSTrainer
             this.Instructions.AutoSize = true;
             this.Instructions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Instructions.ForeColor = System.Drawing.Color.Green;
-            this.Instructions.Location = new System.Drawing.Point(161, 90);
+            this.Instructions.Location = new System.Drawing.Point(161, 134);
             this.Instructions.Name = "Instructions";
             this.Instructions.Size = new System.Drawing.Size(246, 42);
             this.Instructions.TabIndex = 8;
             this.Instructions.Text = "To see the changes,\r\ngo into the map and then go back.";
             // 
+            // rgch
+            // 
+            this.rgch.AutoSize = true;
+            this.rgch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rgch.Location = new System.Drawing.Point(12, 84);
+            this.rgch.Name = "rgch";
+            this.rgch.Size = new System.Drawing.Size(238, 25);
+            this.rgch.TabIndex = 9;
+            this.rgch.Text = "Remove Garage Money Check";
+            this.rgch.UseVisualStyleBackColor = true;
+            this.rgch.CheckedChanged += new System.EventHandler(this.rgch_CheckedChanged);
+            // 
+            // rmd
+            // 
+            this.rmd.AutoSize = true;
+            this.rmd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rmd.Location = new System.Drawing.Point(12, 112);
+            this.rmd.Name = "rmd";
+            this.rmd.Size = new System.Drawing.Size(211, 25);
+            this.rmd.TabIndex = 10;
+            this.rmd.Text = "Reverse Money Deduction";
+            this.rmd.UseVisualStyleBackColor = true;
+            this.rmd.CheckedChanged += new System.EventHandler(this.rmd_CheckedChanged);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 219);
+            this.ClientSize = new System.Drawing.Size(414, 242);
+            this.Controls.Add(this.rmd);
+            this.Controls.Add(this.rgch);
             this.Controls.Add(this.Instructions);
             this.Controls.Add(this.ProcOpenLabel);
             this.Controls.Add(this.GameFound);
@@ -152,8 +180,12 @@ namespace ATSTrainer
             this.Controls.Add(this.SetEXP);
             this.Controls.Add(this.MoneyAmount);
             this.Controls.Add(this.SetMoney);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainWindow";
+            this.ShowIcon = false;
             this.Text = "ATS Trainer (By Saniee)";
             this.Shown += new System.EventHandler(this.MainWindow_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.MyPFP)).EndInit();
@@ -174,6 +206,8 @@ namespace ATSTrainer
         private System.Windows.Forms.Label GameFound;
         private System.Windows.Forms.Label ProcOpenLabel;
         private System.Windows.Forms.Label Instructions;
+        private System.Windows.Forms.CheckBox rgch;
+        private System.Windows.Forms.CheckBox rmd;
     }
 }
 

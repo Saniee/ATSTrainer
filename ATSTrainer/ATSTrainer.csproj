@@ -5,8 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>mypfp.ico</ApplicationIcon>
+    <ApplicationIcon>tenebris-vector-art.ico</ApplicationIcon>
     <Platforms>AnyCPU;x64</Platforms>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

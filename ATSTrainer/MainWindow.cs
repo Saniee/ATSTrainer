@@ -81,5 +81,29 @@ namespace ATSTrainer
                 m.WriteMemory("amtrucks.exe+01931738,195C", "int", EXPAmount.Text);
             }
         }
+
+        private void rgch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rgch.Checked)
+            {
+                m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "83 79 10 00");
+            }
+            else
+            {
+                m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "48 39 41 10");
+            }
+        }
+
+        private void rmd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rmd.Checked)
+            {
+                m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 01 D8");
+            }
+            else
+            {
+                m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 29 D8");
+            }
+        }
     }
 }
