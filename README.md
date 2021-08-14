@@ -18,4 +18,4 @@ SetEXP - Sefl Explanatory <br />
 Bypass Garage Money Check - Removes the need of having the money to buy a garage. <br />
 Reverse Money Deduction - this reverse every deduction of money from your account and makes it so instead of removing the balance it adds it.
 
-![ets2trainer](https://i.imgur.com/jhIWixk.png)
+![ets2trainer](https://i.imgur.com/Vm64qfM.png)
