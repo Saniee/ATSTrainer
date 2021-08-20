@@ -65,7 +65,10 @@ namespace ATSTrainer
             else
             {
                 // Public Beta 1.41
-                m.WriteMemory("amtrucks.exe+01931738,10,10", "int", MoneyAmount.Text);
+                // m.WriteMemory("amtrucks.exe+01931738,10,10", "int", MoneyAmount.Text);
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+01935A88,10,10", "int", MoneyAmount.Text);
             }
         }
 
@@ -78,7 +81,10 @@ namespace ATSTrainer
             else
             {
                 // Public Beta 1.41
-                m.WriteMemory("amtrucks.exe+01931738,195C", "int", EXPAmount.Text);
+                //m.WriteMemory("amtrucks.exe+01931738,195C", "int", EXPAmount.Text);
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+01935A88,195C", "int", EXPAmount.Text);
             }
         }
 
@@ -86,11 +92,19 @@ namespace ATSTrainer
         {
             if (rgch.Checked)
             {
-                m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "83 79 10 00");
+                // Public Beta 1.41
+                // m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "83 79 10 00");
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+A32D18", "bytes", "83 79 10 00");
             }
             else
             {
-                m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "48 39 41 10");
+                // Public Beta 1.41
+                // m.WriteMemory("amtrucks.exe+A31FA8", "bytes", "48 39 41 10");
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+A32D18", "bytes", "48 39 41 10");
             }
         }
 
@@ -98,11 +112,19 @@ namespace ATSTrainer
         {
             if (rmd.Checked)
             {
-                m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 01 D8");
+                // Public Beta 1.41
+                // m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 01 D8");
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+6B411E", "bytes", "48 01 D8");
             }
             else
             {
-                m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 29 D8");
+                // Public Beta 1.41
+                // m.WriteMemory("amtrucks.exe+6B36EE", "bytes", "48 29 D8");
+
+                // 1.41.1.35e
+                m.WriteMemory("amtrucks.exe+6B411E", "bytes", "48 2B C3");
             }
         }
     }
