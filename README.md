@@ -1,4 +1,4 @@
-![GitHub release (latest by date)](https://img.shields.io/github/downloads/Saniee/ETS2Trainer/latest/total)
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/Saniee/ATSTrainer/latest/total)
 
 # ATS Trainer
 # The Trainer needs a Admin privilages!
