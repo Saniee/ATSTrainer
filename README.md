@@ -1,6 +1,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/downloads/Saniee/ATSTrainer/latest/total)
 
-# ATS Trainer
+# ATS Trainer (Archived, will no longer be updated.)
 # The Trainer needs a Admin privilages!
 
 Best used for editing your profile for more money and exp so you dont have to grind.
